@@ -1,0 +1,9 @@
+services:
+#    blog_general.example:
+#        class: blog\GeneralBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+    blog_user.registration.form.type:
+        class: blog\UserBundle\Form\Type\RegistrationFormType
+        tags:
+            - { name: form.type, alias: blog_user_registration }
